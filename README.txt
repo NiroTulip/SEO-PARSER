@@ -1,0 +1,11 @@
+The SEO PARSER project is written in Java and uses Selenium Webdriver, JUnit, Maven.
+The program uses Selenium and JUnit testing tools to parse Search Engines results based on the entered keyword and search depth (in terms of pagination pages). The results are printed to the console. The structure of the output of the result: for each pagination page, a list of results is displayed in the following format: Title | URL. 5 search engines are supported: Bing, DuckDuckGo, Google, Yandex, Start Page.
+The result of the work for 5 search engines is presented in the EXECUTION RESULT.rtf file, where the keyword is "SpaceX" and the search depth searchDepth = 2 are used as input data.
+Each search engine has its own java class, inherited from a common ancestor - the AbstractParser abstract class. The abstract class AbstractParser contains the main methods in a general way. Specific differences in how methods work are implemented by overriding methods in descendant classes. The code is concise and understandable.
+Launching tests is in the MainTest class. Selenium Webdriver requires Google Chrome version 98 or older.
+
+Проект SEO PARSER написан на Java и использует Selenium Webdriver, JUnit, Maven.
+Программа использует инструменты тестирования Selenium и JUnit, чтобы парсить выдачу поисковиков по введенному поисковому ключу keyword и глубине поиска (страницы пагинации). Результаты выводятся в консоль. Структура выдачи результата: для каждой страницы пагинации выдается список результатов в формате Title | URL. Поддерживается 5 поисковиков: Bing, DuckDuckGo, Google, Yandex, Start Page.
+Результат работы для 5 поисковиков представлен в файле EXECUTION RESULT.rtf, где в качестве входных данных используется keyword "SpaceX" и глубина поиска по страницам пагинации searchDepth = 2. 
+Для каждого поисковика реализован свой java класс, унаследованный от общего предка - абстрактного класса AbstractParser. Абстрактный класс AbstractParser содержит основные методы в общем виде. Специфические отличия в работе методов реализуются переопределением методов в классах потомках. Получился лаконичный и понятный код.
+Запуск тестов находится в классе MainTest. Для работы Selenium Webdriver необходим браузер Google Chrome версии 98 или более старые.
